@@ -1,6 +1,27 @@
 Applications:
     fox:
         app_types:
-            - foxApp
+            - fox
         content_directory: ${ROOT_DIR}/doc/content
+        remove:
+            - ${MOOSE_DIR}/framework/doc/remove.yml
         log_default: WARNING
+        show_warning: false
+
+Documents:
+    software_requirements_specification: sqa/fox_srs.md
+    software_design_description: sqa/fox_sdd.md
+    software_test_plan: sqa/fox_stp.md
+    requirements_traceability_matrix: sqa/fox_rtm.md
+    verification_validation_report: sqa/fox_vvr.md
+    failure_analysis_report: sqa/fox_far.md
+    software_library_list: sqa/fox_sll.md
+    log_default: WARNING
+    show_warning: false
+
+Requirements:
+    fox:
+        directories:
+            - ${ROOT_DIR}/test
+        log_default: WARNING
+        show_warning: false

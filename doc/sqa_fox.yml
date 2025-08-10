@@ -1,0 +1,9 @@
+directories:
+    - ${ROOT_DIR}/test/tests
+specs:
+    - tests
+dependencies:
+    - framework
+repos:
+    default: https://github.com/farshid2/fox (push)
+reports: !include ${ROOT_DIR}/doc/sqa_reports.yml
